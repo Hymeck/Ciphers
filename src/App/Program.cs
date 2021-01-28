@@ -16,8 +16,8 @@ namespace App
             
             var input = args.Length == 0 ? RussianAlphabet : string.Join(' ', args);
             var key = 3;
-            var encodedInput = Caesar.encipher(input, key);
-            var decodedInput = Caesar.decipher(encodedInput, key);
+            var encodedInput = Caesar.encrypt(input, key);
+            var decodedInput = Caesar.decrypt(encodedInput, key);
             
             WriteLine($"Входная строка: {input}");
             WriteLine($"Закодированная  строка по основанию {key}: {encodedInput}");
