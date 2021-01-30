@@ -2,6 +2,16 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Library\Library.fsproj" />
+    <ProjectReference Include="..\Vigenere\Vigenere.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="source\caesar.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="source\vigenere.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <PropertyGroup>
